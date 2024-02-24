@@ -8,7 +8,7 @@ import {
   DeleteCommand,
 } from "@aws-sdk/lib-dynamodb";
 
-const client = new DynamoDBClient({ region: "us-west-2" });
+const client = new DynamoDBClient({ region: "eu-north" });
 
 const docClient = DynamoDBDocumentClient.from(client);
 
