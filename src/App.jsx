@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
-import Form from "./Form";
-import "./index.css";
-import Output from "./Output";
-import { v4 as uuidv4 } from "uuid";
-import axios from "axios";
-import { API_URL } from "../api/utils";
+const React = require("react");
+const { useState, useEffect } = React;
+const Form = require("./Form");
+require("./index.css");
+const Output = require("./Output");
+const { v4: uuidv4 } = require("uuid");
+const axios = require("axios");
+const { API_URL } = require("../api/utils");
 
 function App() {
   const [posts, setPosts] = useState({ body: "", title: "" });
